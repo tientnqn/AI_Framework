@@ -1,0 +1,47 @@
+HƯỚNG DẪN SỬ DỤNG AI-WORKING-FRAMEWORK
+========================================
+
+1. LẦN ĐẦU ONBOARD — ĐỌC THEO THỨ TỰ NÀY
+------------------------------------------
+00_mindset.md          → Đọc một lần, hiểu nền tảng tư duy
+01_prompting_guide.md  → Đọc + lưu lại để tham chiếu thường xuyên
+04_evaluation.md       → Đọc một lần, nhớ checklist 3 câu hỏi
+
+02_agent_architecture/ và 03_use_cases/ — không cần đọc hết ngay,
+chỉ mở khi cần.
+
+
+2. LÀM VIỆC HÀNG NGÀY — MỞ FILE NÀO?
+--------------------------------------
+Không biết bắt đầu prompt thế nào     → 01_prompting_guide.md (Mục 5 - templates)
+Phân tích yêu cầu từ ngân hàng        → UC-01_phan-tich-yeu-cau.md
+Viết ADR / spec / API doc              → UC-02_sinh-tai-lieu-ky-thuat.md
+Review tài liệu thiết kế               → UC-03_review-qa-tai-lieu.md
+Research công nghệ mới                 → UC-04_nghien-cuu-cong-nghe.md
+Chuẩn bị báo cáo cho CTO/CEO          → UC-05_bao-cao-lanh-dao.md
+Debug hoặc review code                 → UC-06_debug-code-review.md
+Output AI có vẻ sai / không tin        → 04_evaluation.md (Checklist mục 7)
+
+
+3. KHI XÂY DỰNG AGENT MỚI — ĐI THEO THỨ TỰ
+--------------------------------------------
+1. 02/00_overview.md   → Xác định có cần agent không, vẽ vòng đời
+2. 02/01_persona.md    → Điền template persona
+3. 02/02_tools.md      → Liệt kê và định nghĩa từng tool
+4. 02/03_memory.md     → Chọn loại memory, viết memory strategy
+5. 02/04_guardrails.md → Điền guardrails config, xác định human-in-the-loop
+
+
+4. QUY TẮC THỰC TẾ
+--------------------
+Output ảnh hưởng đến sản phẩm/khách hàng  → Bắt buộc human review
+Output chỉ dùng nội bộ, low-stakes        → Review nhanh là đủ
+Không chắc model nào dùng                 → Xem 01_prompting_guide.md mục 3
+Output kém, không hiểu tại sao            → Xem 04_evaluation.md mục 5
+
+
+5. GỢI Ý THỰC TẾ
+-----------------
+Tuần đầu, team chỉ cần dùng 01_prompting_guide.md + 2-3 use case
+sát nhất với công việc hiện tại.
+Đừng áp dụng toàn bộ framework cùng lúc — sẽ overwhelm và không ai dùng.
